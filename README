@@ -1,0 +1,16 @@
+The aim of this script is to walk a filesystem, find files that cannot be
+handled by fuse mp3 fs and coerce them into flac.
+
+Requirements:
+
+- don't overwrite flac files if they already exist
+- tag files with the source so that it's known what bitrate and codec was in use before coercion
+- retain any tags that were in place before
+- maintain consistency with filenames
+- simple usage with command and source and quarantine path
+- clean up created files in the even of failure
+- allow iterative execution - so if command exits at any point re-invoking will allow the process to resume without
+missing files
+- possibly only look *n* files ahead where *n* is configurable in the command
+
+At this point I'm not concerned about additional features like replay gain, normalisation etc
