@@ -1,5 +1,4 @@
-The aim of this script is to walk a filesystem, find files that cannot be
-handled by fuse mp3 fs and coerce them into flac.
+The aim is to provide a server that accepts music files/folders added to a location, moves them to a library location as flac and can provide a view of that library encoded into other formats.
 
 Requirements:
 
@@ -7,6 +6,7 @@ Requirements:
 - tag files with the source so that it's known what bitrate and codec was in use before coercion
 - retain any tags that were in place before
 - maintain consistency with filenames
+- compatible for use as cron task
 - simple usage with command and source and quarantine path
 - clean up created files in the even of failure
 - allow iterative execution - so if command exits at any point re-invoking will allow the process to resume without
