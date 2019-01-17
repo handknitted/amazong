@@ -105,3 +105,14 @@ venv.bak/
 
 # ide config
 .idea*
+
+# stupid mac stuff
+.DS_Store
+
+# test related artifacts
+test_resources/mp3/amazong.db
+
+# test data directory
+test_resources/music/13*
+
+
